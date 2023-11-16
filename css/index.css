@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px !important;
+    width: 100vw;
+}
+
+.nav-link {
+    color: white !important;
+
+
+}
+
+.navbar-brand img {
+    width: 18vw;
+}
+
+
+.justify-content-center {
+    justify-content: start !important;
+    margin-left: 15vw;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    transform: translate3d(5px, 28px, 0px);
+    top: 20px;
+    left: -5px;
+    will-change: transform;
+}
+
+.dropdown {
+    display: inline-block;
+    list-style: none;
+
+
+}
+
+.nav-item {
+    margin-right: 5px;
+}
+
+
+
+nav {
+    font-size: 130%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+
+}
+
+.zap img {
+    
+    width: 3vw;
+    float: inline-start;
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.carousel-container {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: none;
+
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+main img {
+    width: 100vw;
+}
+
+.alo img {
+    flex-grow: 5;
+    border: 5px solid black;
+    width: 15vw;
+    border-radius: 8px;
+    margin-left: 10vw;
+}
+
+
+
+#desc p {
+    width: 20vw;
+    text-align: right;
+}
+
+#desc button {
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    width: 10vw;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    float: right;
+}
+
+#desc button:hover {
+    background-color: gray;
+
+}
+
+span {
+    color: rgb(171, 30, 30);
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+#h2s {
+    width: 100vw;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -8px;
+    margin-left: -10px;
+    background-color: rgb(252, 251, 251);
+
+}
+
+#h2s h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+}
+
+#div-me {
+    text-align: center;
+    background-color: transparent;
+    height: 5px;
+}
+
+.cardapio {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    margin-top: 0%;
+    background-color: rgb(240, 240, 240);
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.cardapio img {
+    width: 10vw;
+    opacity: 0;
+    transform: translateX(300px);
+    transition: opacity 1s, transform 1s;
+    margin: 1px;
+    
+
+}
+.cardapio img:hover{
+    animation: ease 1s;
+} 
+
+.cardapio img.in-viewport {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+/* ----------------------------------------------------------------------------- */
+#pagC {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    height: 90vh;
+    margin-left: 5vw;
+
+}
+
+.contatos {
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 0%;
+    margin-top: 4%;
+    width: 50vw;
+    height: 50vh;
+    font-weight: 100;
+
+}
+
+.contatos h2 {
+
+    margin-left: 2vw;
+    text-align: center;
+    font-weight: 200;
+
+}
+
+.contatos input,
+textarea {
+    border: none;
+    background-color: rgb(212, 212, 212);
+    text-align: center;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+}
+
+
+.contatos ul li {
+
+    list-style-type: none;
+
+}
+
+.contatos input[type="submit"] {
+    background-color: transparent;
+    border: 4px rgb(185, 110, 12) solid;
+    padding: 12px;
+    border-radius: 2px;
+    width: 13vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+.galery {
+    margin-top: 5vh;
+    column-count: 2;
+    column-gap: 0;
+
+    width: 40vw;
+}
+
+.galery img {
+
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: scale 350ms ease, opacity 350ms linear;
+
+}
+
+.galery:has(img:hover) img:not(:hover) {
+    scale: .9;
+    opacity: .7;
+
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    background-color: rgb(7, 7, 7);
+    height: 22vh;
+}
+
+footer img {
+    width: 20vw;
+   
+}
+footer h2 {
+    
+    color: rgb(100, 100, 100);
+    font-weight: 200;
+    font-size: 25px;
+}
+
+footer ul li, a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+footer #mSite {
+    flex-grow: 1;
+}
+
+footer ul li, a:hover {
+    color: rgba(250, 9, 9, 0.966);
+}
+#fale {
+    flex-grow: 1;
+}
+
+#fale h2, span {
+    
+    color: white;
+    font-weight: 400;
+}
+
+#fale p{
+    color: white;
+    
+    font-weight: 100;
+}
+#redes {
+    flex-grow: 1;
+
+}
+
+#redes  {
+  
+}
+
