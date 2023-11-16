@@ -106,6 +106,7 @@ main img {
     flex-grow: 5;
     border: 5px solid black;
     width: 15vw;
+    height: 18vh;
     border-radius: 8px;
     margin-left: 10vw;
 }
