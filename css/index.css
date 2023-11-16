@@ -10,6 +10,7 @@
 body {
     margin: 0px !important;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .nav-link {
@@ -52,16 +53,16 @@ body {
 
 
 nav {
-    font-size: 130%;
+    font-size: 100%;
     background-color: rgba(0, 0, 0, 0.8);
 
 
 }
-
+.zap{margin-right: 50px;}
 .zap img {
     
-    width: 3vw;
-    float: inline-start;
+    width: 4vw;
+
 
 }
 
