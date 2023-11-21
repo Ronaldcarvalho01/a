@@ -115,6 +115,7 @@ main img {
     flex-grow: 5;
     border: 5px solid black;
     width: 15vw;
+    height: auto;
     border-radius: 8px;
     margin-left: 10vw;
 }
@@ -185,6 +186,7 @@ main img {
     transform: translateX(300px);
     transition: opacity 1s, transform 1s;
     margin: 1px;
+    height: 20vh;
     
 
 }
