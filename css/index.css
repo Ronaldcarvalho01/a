@@ -13,6 +13,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 .nav-link {
     color: white !important;
 
@@ -25,13 +27,15 @@ body {
 
 
 .navbar-brand img {
-    width: 18vw;
+    width: 20vw;
 }
+
+
 
 
 .justify-content-center {
     justify-content: start !important;
-    margin-left: 15vw;
+    margin-left: 19vw;
 
 }
 
@@ -68,7 +72,7 @@ nav {
 
 
 .zap {
-    margin-right: 1vw;  
+    margin-right: 1vw;
 }
 
 .zap img {
@@ -77,6 +81,7 @@ nav {
 
 
 }
+
 .zap img:hover {
     width: 3.2vw;
 }
@@ -87,7 +92,7 @@ nav {
 .carousel-container {
     box-sizing: border-box;
     width: 100%;
-    overflow: none;
+
 
 }
 
@@ -97,6 +102,8 @@ nav {
 
 
 }
+
+
 
 .carousel-slide {
     display: none;
@@ -144,10 +151,126 @@ main img {
     float: right;
 }
 
+@media (min-width: 0px) and (max-width: 1000px) {
+
+    nav{
+        font-size: 2vw;
+    }
+    .navbar-brand img {
+        display: none;
+    }
+
+    .dropdown-item   {
+        border: 1px black solid;
+        color: black;
+        background-color: transparent;
+    }
+
+    .navbar-nav {
+        margin-left: -5vw;
+    }
+
+    .container {
+        width: 800px !important;
+        max-width: none;
+    }
+    .container img {
+        width: 100%;
+
+    }   
+
+    .container button {
+        margin-left: 1px !important;
+        float: left !important;
+        width: 100% !important;
+    }
+
+    #desc {
+        width: 100% !important;
+        margin-left: 0px !important;
+        flex-grow: 1 !important;
+       
+
+    }
+
+    #desc p {
+        line-height: 30px;
+        width: 30vw;
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+
+   
+
+    .carousel-container img {
+        height: 80vh;
+    }
+
+    .cardapio {
+        width: 100vw;
+    }
+
+    .cardapio a img {
+        width: 30vw;
+        margin-left: 1vw;
+        height: 40vh;
+        margin-bottom: 5% !important;
+    }
+
+    #pagC {
+        margin-top: 10vh;
+        height: 120vh !important;
+    }
+
+    #pagC h2 {
+        font-size: 50px;
+        
+    }
+
+    form {
+        margin-right: 2% !important;
+        text-align: center;
+    }
+
+    form ul li {
+
+        width: 100%;
+    }
+    
+    label {
+        width: 100%;
+        font-size: 40px !important;
+    }
+
+  
+    .contatos input, textarea {
+        width: 200px !important;
+        height: 10vh;
+    }
+    
+    .galery {
+        width: 50vw !important;
+        margin-top: 2vh !important;
+    }
+    #h2g {
+        font-size: 50px;
+    }
+
+    footer ul li a
+     {
+        list-style: none !important;
+        text-decoration: none !important;
+        color: white !important;
+    }
+}
+
 #desc button:hover {
     background-color: gray;
 
 }
+
 
 #desc span {
     color: rgb(171, 30, 30);
@@ -286,7 +409,6 @@ textarea {
     margin-top: 5vh;
     column-count: 2;
     column-gap: 0;
-
     width: 40vw;
 }
 
@@ -298,8 +420,9 @@ textarea {
     transition: scale 350ms ease, opacity 350ms linear;
 
 }
+
 #h2g {
-    margin-right: -50;
+    text-align: center;
 }
 
 .galery:has(img:hover) img:not(:hover) {
@@ -365,7 +488,4 @@ span {
 
 #redes {
     flex-grow: 1;
-
 }
-
-#redes {}
