@@ -16,8 +16,13 @@ body {
 .nav-link {
     color: white !important;
 
+}
+
+.nav-link:hover {
+    color: rgb(243, 83, 83) !important;
 
 }
+
 
 .navbar-brand img {
     width: 18vw;
@@ -34,7 +39,7 @@ body {
     display: block;
     position: absolute;
     transform: translate3d(5px, 28px, 0px);
-    top: 20px;
+    top: 10%;
     left: -5px;
     will-change: transform;
 }
@@ -52,27 +57,28 @@ body {
 
 
 
+
 nav {
     font-size: 100%;
     background-color: rgba(0, 0, 0, 0.8);
 
 
 }
-Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-  }
-.Navbar__Link-toggle {
-    display: none;
-  }
-.zap{margin-right: 50px;}
+
+
+
+.zap {
+    margin-right: 1vw;  
+}
+
 .zap img {
-    
-    width: 4vw;
+
+    width: 3.5vw;
 
 
+}
+.zap img:hover {
+    width: 3.2vw;
 }
 
 
@@ -87,7 +93,7 @@ Navbar__Link-toggle {
 
 .carousel-container img {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 
 
 }
@@ -174,30 +180,45 @@ main img {
     display: flex;
     width: 100%;
     height: 40vh;
-    margin-top: 0%;
+    margin-top: 2%;
     background-color: rgb(240, 240, 240);
     justify-content: center;
-    margin-top: 2%;
+}
+
+.cardapio a {
+    position: relative;
+    display: block;
 }
 
 .cardapio img {
-    width: 10vw;
-    opacity: 0;
-    transform: translateX(300px);
+    width: 15vw;
+    opacity: 1;
+    transform: translateX(0);
     transition: opacity 1s, transform 1s;
     margin: 1px;
-    height: 20vh;
-    
-
+    height: 30vh;
 }
-.cardapio img:hover{
-    animation: ease 1s;
-} 
 
-.cardapio img.in-viewport {
+.cardapio img:hover {
+    opacity: 0.2;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.cardapio a:hover .overlay-text {
     opacity: 1;
-    transform: translateX(0px);
 }
+
 
 
 /* ----------------------------------------------------------------------------- */
@@ -247,11 +268,16 @@ textarea {
 
 .contatos input[type="submit"] {
     background-color: transparent;
-    border: 4px rgb(185, 110, 12) solid;
+    border: 1px rgb(10, 10, 10) solid;
     padding: 12px;
-    border-radius: 2px;
+    border-radius: 5px;
     width: 13vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contatos input[type="submit"]:hover {
+    background-color: rgb(221, 22, 22);
+    color: white;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
@@ -272,6 +298,9 @@ textarea {
     transition: scale 350ms ease, opacity 350ms linear;
 
 }
+#h2g {
+    margin-right: -50;
+}
 
 .galery:has(img:hover) img:not(:hover) {
     scale: .9;
@@ -289,50 +318,54 @@ footer {
 
 footer img {
     width: 20vw;
-   
+
 }
+
 footer h2 {
-    
-    color: rgb(100, 100, 100);
+
+    color: rgb(255, 255, 255);
     font-weight: 200;
     font-size: 25px;
 }
 
-footer ul li, a {
+footer ul li,
+a {
     list-style: none;
     text-decoration: none;
     color: white;
     font-size: 15px;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
+
 footer #mSite {
     flex-grow: 1;
 }
 
-footer ul li, a:hover {
+footer ul li,
+a:hover {
     color: rgba(250, 9, 9, 0.966);
 }
+
 #fale {
     flex-grow: 1;
 }
 
-#fale h2, span {
-    
+#fale h2,
+span {
+
     color: white;
     font-weight: 400;
 }
 
-#fale p{
+#fale p {
     color: white;
-    
+
     font-weight: 100;
 }
+
 #redes {
     flex-grow: 1;
 
 }
 
-#redes  {
-  
-}
-
+#redes {}
